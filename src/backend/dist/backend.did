@@ -1,0 +1,9 @@
+service : {
+  getGamesPlayed: () -> (nat) query;
+  getHighScores: () -> (vec record {
+                              text;
+                              nat;
+                            }) query;
+  incrementGamesPlayed: () -> ();
+  submitScore: (name: text, score: nat) -> ();
+}
